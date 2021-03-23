@@ -74,52 +74,52 @@
                 <div class="col">
                     <h4>Edit Project</h4>
                     <hr><!--horizontal line-->
-                    <form class="mx-auto" name="editProject">
-                        
-                        <div class="form-group">
-                          <label for="name" class="form-label">Project name</label>
-                          <input type="text" class="form-control" name="name"  placeholder="Enter project name" value="Project 1">
+                    <form name="editProject">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="name" class="form-label">Project name</label>
+                                <input type="text" class="form-control" name="name"  placeholder="Enter project name" value="Project 1">
+                            </div>
+                  
+                            <div class="form-group col-12">
+                                <label for="abstract" class="form-label">Project abstract</label>
+                                <textarea class="form-control" name="abstract" rows="6">Project 1 is a very interesting project</textarea>
+                            </div>
+                
+                            <div class="form-group col-12">
+                                <label for="authors" class="form-label">Author(s)</label>
+                                <input type="text" class="form-control" name="authors"  placeholder="Emmanuel Wisdom">
+                            </div>
+                
+                            <div class="form-group col-12">
+                                <label for="tags" class="form-label">Tag(s)</label>
+                                <input type="text" class="form-control" name="tags"  placeholder="#web">
+                            </div>
+                            
                         </div>
-            
-                        <div class="form-group">
-                            <label for="abstract" class="form-label">Project abstract</label>
-                            <textarea class="form-control" name="abstract" rows="6">Project 1 is a very interesting project</textarea>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="authors" class="form-label">Author(s)</label>
-                            <input type="text" class="form-control" name="authors"  placeholder="Emmanuel Wisdom">
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="tags" class="form-label">Tag(s)</label>
-                            <input type="text" class="form-control" name="tags"  placeholder="#web">
-                        </div>
-                        
                         
                         <button type="submit" class="btn btn-primary">Save</button>
-                      </form>
+                    </form>
                 </div>
                 <div class="col">
                     <h4>Manage Project Files</h4>
                     <hr><!--horizontal line-->
-                    <form action="">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="projectFile">
+
+                    <form>
+                        <div class="form-group custom-file col-12">
+                            <input type="file" class="form-control custom-file-input" name="projectFile">
                             <label class="custom-file-label" for="customFile">Click to open file browser</label>
                         </div>
                     </form>
-
+                    <hr><!--horizontal line-->
                     <div class="card">
-                        <h6 class="card-header">
-                         Project files
-                        </h6>
-                        <div class="card-body">
-                          
-                          <p class="card-text text-center">No file uploaded yet</p>
-                          
+                        <div class="card-header">
+                            Project files
                         </div>
-                      </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">No file uploaded yet</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
