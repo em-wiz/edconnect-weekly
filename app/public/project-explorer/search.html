@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1 "><!-- shrink-to-fit=no -->
-        
-        <title>Sign up</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/mycss.css">
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary align-items-center">
         <a class="navbar-brand" href="index.html">Project Explorer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+        <form class="form-inline my-2 my-lg-0" name="searchForm">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Projects">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form><br>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" name="searchForm" type="search" placeholder="Search Projects" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link"href="#">Submit</a>
-                </li>
-            </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-          </ul>
-          
+            <a class="nav-link" style="color: beige;" href="createproject.html">Submit</a>
         </div>
-      </nav>
-
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color: beige;" href="register.html">Sign Up</a>
+            </li>
+            <li>
+                <a class="nav-link" style="color: beige;" href="login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <main class="p-2 order-3">
     <div class="container">
     <section class="mt-5">
@@ -74,15 +67,13 @@
     </section>
     </div>
 </main>
-<footer class="container-fluid bg-light p-3 mt-3">
-    <div class="row align-items-center">
-        <div class="p-2 ml-auto"> 
-            Project Explorer &copy;2020.<span class="font-weight-bold">Edconnect</span> 
-        </div>
-    </div> 
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            Project Explorer © 2020 -
+            <a class="link" style="color: black;" href="#">Edconnect</a>
+        </p>
+    </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
